@@ -36,16 +36,16 @@ public class desafioModulo2 {
                     System.out.println("Digite o CPF do funcionário: ");
                     String cpf = leitor.nextLine();
 
-                        if(listaDeFuncionaros.containsKey(cpf)){
-                            System.out.println("CPF inválido, esse CPF ja esta cadastrado");
+                    if (listaDeFuncionaros.containsKey(cpf)) {
+                        System.out.println("CPF inválido, esse CPF ja esta cadastrado");
 
-                        }
-                        // Exibindo lista e declarando a chave
-                        else{
-                            listaDeFuncionaros.put(cpf, " Nome: " + nome + " Telefone: " + telefone + " Email: " + email);
-                            System.out.println(listaDeFuncionaros);
+                    }
+                    // Exibindo lista e declarando a chave
+                    else {
+                        listaDeFuncionaros.put(cpf, " Nome: " + nome + " Telefone: " + telefone + " Email: " + email);
+                        System.out.println(listaDeFuncionaros);
 
-                        }
+                    }
 
                     break;
                 case 2:
@@ -58,7 +58,7 @@ public class desafioModulo2 {
                     System.out.println("Digite o CPF que será deletado:");
                     String funcionarioDelCpf = leitor.nextLine();
                     for (String removerCpf : listaDeFuncionaros.keySet()) {
-                        if (removerCpf.equals(funcionarioDelCpf)){
+                        if (removerCpf.equals(funcionarioDelCpf)) {
                             System.out.println("Funcionario excluído com sucesso");
                             listaDeFuncionaros.remove(funcionarioDelCpf);
                         }
