@@ -59,11 +59,15 @@ public class desafioModulo2 {
                     break;
                 case 2:
                     //exibindo lista
-                    for (String exibicao: listaDeFuncionaros.keySet()) {
-                        System.out.println("Nome: " + listaDeFuncionaros.get(exibicao)+ " CPF: " +exibicao);
-                        
+                    for (String exibicao : listaDeFuncionaros.keySet()) {
+                        System.out.println( listaDeFuncionaros.get(exibicao) + " CPF: " + exibicao);
                     }
-                    
+                    break;
+                case 3:
+                    System.out.println("Encerrando o cadastro");
+                    System.exit(0);
+                    break;
+
 
             }
         }
